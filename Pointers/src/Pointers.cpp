@@ -19,7 +19,7 @@ int main() {
 
 	int nValue = 8;
 
-	int *pnValue = &nValue;
+	int* pnValue = &nValue;
 
 	// *pnValue = 6;
 

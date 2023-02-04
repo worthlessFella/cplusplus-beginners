@@ -21,18 +21,18 @@ int main() {
 
 	pTexts += 3;
 
-	cout << *pTexts << endl;
+	cout << *pTexts << endl; // four
 
 	pTexts -= 2;
 
-	cout << *pTexts << endl;
+	cout << *pTexts << endl; //two
 
 	string *pEnd = &texts[NSTRINGS];
 	pTexts = &texts[0];
 
 	while(pTexts != pEnd) {
 		cout << *pTexts << endl;
-		pTexts++;
+		pTexts++; //one two three four
 	}
 
 	// Set pTexts back to start.
@@ -40,7 +40,7 @@ int main() {
 
 	long elements = (long)(pEnd - pTexts);
 
-	cout << elements << endl;
+	cout << elements << endl; // 5
 
 	// Set pTexts back to start.
 	pTexts = &texts[0];

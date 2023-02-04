@@ -38,12 +38,20 @@ public:
 
 
 int main() {
+
 	Animal *pCat1 = new Animal();
 	pCat1->setName("Freddy");
 	pCat1->speak();
+
+	Animal *pCat2 = new Animal(*pCat1);
+
 	delete pCat1;
 
-	cout << sizeof(pCat1) << endl;
+	pCat2->speak();
+
+	cout << sizeof(pCat1) << " " << sizeof(pCat2) << endl;
+
+	delete pCat2;
 
 	return 0;
 }

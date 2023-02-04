@@ -11,13 +11,13 @@ using namespace std;
 
 class Frog {
 private:
-	string name;
+	string number;
 
 private:
-	string getName() { return name; }
+	string getName() { return number; }
 
 public:
-	Frog(string name): name(name) {}
+	Frog(string name): number(name) {}
 
 	void info() { cout << "My name is: " << getName() << endl; }
 };
